@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yapılacaklar Listesi</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <div class="container">
+    <div class="top">
+      <div class="leftSide">
+        <h1>Unutma Bunları!</h1>
+        <h2 id="today">01.01.0101 <br /></h2>
+      </div>
+      <div class="rightSide">
+        <div class="rightBox" id="todoCounter">0/0</div>
+      </div>
+
+    </div>
+
+    <form class="input-form" onsubmit="return false;">
+      <input id="toDoinput" type="text" placeholder="Neyi Unutmaycağız?">
+      <button id="btnAdd" type="button">
+        <img src="add.png" alt="Ekle" width="24" height="24">
+      </button>
+    </form>
+    <ul class="toDoList" id="toDoList">
+    </ul>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
